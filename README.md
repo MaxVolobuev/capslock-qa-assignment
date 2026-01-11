@@ -26,11 +26,17 @@ npm run install:pw
 ```bash
 npm run test
 ```
+Optional (override base URL): 
+```bash
+BASE_URL=<your-environment-url>  npm run test```
 
 ### Open Playwright UI mode (manual test execution)
 ```bash
 npm run test:ui
 ```
+Optional (override base URL): 
+```bash
+BASE_URL=<your-environment-url>  npm run test:ui```
 
 ### Linting & formatting
 ```bash

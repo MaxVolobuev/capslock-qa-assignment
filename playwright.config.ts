@@ -14,7 +14,7 @@ export default defineConfig({
   reporter: [['list'], ['html', { open: 'never' }]],
 
   use: {
-    baseURL: 'https://test-qa.capslock.global',
+    baseURL: process.env.BASE_URL ?? 'https://test-qa.capslock.global',
     headless: !!process.env.CI,
     trace: 'on-first-retry',
     screenshot: 'only-on-failure',

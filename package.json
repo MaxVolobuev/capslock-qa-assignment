@@ -1,0 +1,35 @@
+{
+  "name": "capslock-qa-assignment",
+  "version": "1.0.0",
+  "description": "QA Lead technical assignment showcasing testing strategy, bug reporting, and Playwright (TypeScript) automation approach",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:ui": "npx playwright test --ui",
+    "report": "npx playwright show-report",
+    "lint": "eslint \"{tests,pages,utils,src,fixtures,types}/**/*.ts\" playwright.config.ts",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write \"tests/**/*.ts\" \"pages/**/*.ts\" \"utils/**/*.ts\" \"types/**/*.ts\" \"playwright.config.ts\" \"data/**/*.ts\" \"constants/**/*.ts\"",
+    "install:pw": "playwright install --with-deps"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaxVolobuev/capslock-qa-assignment.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MaxVolobuev/capslock-qa-assignment/issues"
+  },
+  "homepage": "https://github.com/MaxVolobuev/capslock-qa-assignment#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.57.0",
+    "@types/node": "^25.0.3",
+    "@typescript-eslint/eslint-plugin": "^8.52.0",
+    "@typescript-eslint/parser": "^8.52.0",
+    "eslint": "^9.39.2",
+    "eslint-plugin-prettier": "^5.5.4",
+    "prettier": "^3.7.4"
+  }
+}

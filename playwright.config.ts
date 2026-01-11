@@ -15,7 +15,7 @@ export default defineConfig({
 
   use: {
     baseURL: 'https://test-qa.capslock.global',
-    headless: false,
+    headless: !!process.env.CI,
     trace: 'on-first-retry',
     screenshot: 'only-on-failure',
     video: 'retain-on-failure',
